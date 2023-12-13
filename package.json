@@ -1,5 +1,5 @@
 {
-  "name": "xe-client",
+  "name": "@sambruca/xe-client",
   "version": "0.0.1",
   "description": "Node client for interactive with XE API",
   "main": "./dist/index.js",
