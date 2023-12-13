@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: [prod]
+    branches: [main]
 
 jobs:
   build:
@@ -29,7 +29,15 @@ jobs:
         with:
           cmd: test:ci
 
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
+      - name: Code Coverage Report
+        uses: irongut/CodeCoverageSummary@v1.3.0
+        with:
+          filename: coverage/cobertura-coverage.xml
+          badge: true
+          fail_below_min: true
+          format: markdown
+          hide_branch_rate: false
+          hide_complexity: true
+          indicators: true
+          output: both
+          thresholds: '60 80'
