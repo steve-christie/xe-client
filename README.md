@@ -1,5 +1,9 @@
 # XE Client Year
 
+## Project
+
+Source code can be found on [GitHub](https://github.com/steve-christie/xe-client)
+
 ## Installation
 
 ### NPM
@@ -13,3 +17,4 @@ npm install @sambruca/xe-client
 ```shell
 yarn add @sambruca/xe-client
 ```
+
