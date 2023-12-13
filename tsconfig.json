@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"target": "ES2022",
+		"noImplicitAny": true,
+		"preserveConstEnums": true,
+		"outDir": "./dist",
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "Node",
+		"types": ["node", "mocha", "chai"]
+	},
+	"include": ["src/**/*", "../../decs.d.ts"],
+	"exclude": ["node_modules", "**/*.spec.ts"],
+	"ts-node": {
+		"files": true
+	}
+}
